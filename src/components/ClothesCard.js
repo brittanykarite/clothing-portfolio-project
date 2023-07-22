@@ -1,10 +1,12 @@
+import { Link } from "react-router-dom";
 
-function ClothesCard (props) {
+function ClothesCard ({ clothes }) {
     return (
         <div className='bg-light border p-4 m-2'> 
-          <h4>{props.clothes.category}</h4>
-          <p>{props.clothes.style}</p>
-          <p>{props.clothes.size}</p>
+          <h4>{clothes.category}</h4>
+          <p>{clothes.style}</p>
+          <p>{clothes.size}</p>
+          <Link to={'/clothes/' + clothes.id}>Details</Link>
         </div>
     )
 }

@@ -7,4 +7,4 @@ export default function OutfitPage({ clothesList }) {
             <h2 className='display-1'>{ randomOutfit.style }</h2>
         </div>
     )
-}
+};

@@ -24,4 +24,5 @@ export default function HomePage({ clothesList }) {
             {filteredClothes.map( c => <ClothesCard clothes={c} />)}
         </div>
     )
-}
+};
+
